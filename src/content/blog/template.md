@@ -4,6 +4,7 @@ excerpt: "Some description"
 publishDate: "2022-12-29T11:39:36.050Z"
 # category slug: choose from "./src/data/category.js"
 category: "technology"
+image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=987&h=700"
 # remove this line to publish
 draft: true
 # author slug: choose from "./src/data/authors.js"

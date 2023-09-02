@@ -6,6 +6,7 @@ image: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format
 category: "lifestyle"
 author: "joshua-wood"
 tags: [tag1, tag2, tag3]
+# draft: true
 ---
 
 In 2007, the now-defunct San Antonio Independent Christian Film Festival awarded Best of Festival to a documentary called The Monstrous Regiment of Women, a film that simultaneously asserted that women leading families or nations is antithetical to the Bible, vilified feminists (as Marxists and destroyers of the home), and called legalized abortion an “unparalleled holocaust.” I’m in the midst of researching for a book, and it was already on my calendar last week to rewatch The Monstrous Regiment of Women the day after Supreme Court Justice Samuel Alito’s draft opinion on Roe leaked.

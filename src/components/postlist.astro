@@ -28,10 +28,10 @@ const category = categories.find(
         post.data.image ? (
           <Image
             src={post.data.image}
-            width={800}
-            height={800}
+            width={700}
+            height={700}
             alt="Thumbnail"
-            class="w-full h-full rounded-md object-none"
+            class="w-full h-full rounded-md object-cover"
           />
         ) : (
           <span class="absolute w-16 h-16 text-gray-200 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">

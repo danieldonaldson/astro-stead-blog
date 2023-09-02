@@ -6,6 +6,7 @@ image: "https://images.unsplash.com/photo-1501747315-124a0eaca060?auto=format&fi
 category: "personal"
 author: "joshua-wood"
 tags: [tag1, tag2, tag3]
+draft: true
 ---
 
 **Reinvention often comes in spurts, after a long period of silence. Just as modern architecture recently enjoyed a comeback, brand architecture, a field with well-established principles for decades, is back in the limelight.**
