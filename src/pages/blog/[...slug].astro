@@ -1,5 +1,5 @@
 ---
-import { Image, Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import Authorcard from "@components/authorcard.astro";
 import Container from "@components/container.astro";
 import Label from "@components/ui/label.astro";
@@ -29,7 +29,7 @@ const { Content, remarkPluginFrontmatter } = await post.render();
 
 const author = authors.find((item) => item.slug === post.data.author) as Author;
 const category = categories.find(
-  (item) => item.slug === post.data.category
+  (item) => item.slug === post.data.category,
 ) as Category;
 ---
 
@@ -58,7 +58,6 @@ const category = categories.find(
                   alt="Author Photo"
                   width={80}
                   height={80}
-                  loading="eager"
                   class="rounded-full"
                 />
               )
@@ -76,8 +75,8 @@ const category = categories.find(
                 {getFormattedDate(post.data.publishDate)}
               </time>
               <span>
-                · {Math.round(remarkPluginFrontmatter?.estReadingTime) || "5"} min
-                read
+                · {Math.round(remarkPluginFrontmatter?.estReadingTime) || "5"}
+                 min read
               </span>
             </div>
           </div>
@@ -90,15 +89,11 @@ const category = categories.find(
     class="relative z-0 max-w-screen-lg mx-auto overflow-hidden lg:rounded-lg aspect-video">
     {
       post.data.image && (
-        <Picture
+        <Image
           src={post.data.image}
-          widths={[200, 400, 800]}
-          sizes="(max-width: 640px) 90vw, 480px"
-          aspectRatio="16:9"
           width={1024}
-          heignt={576}
+          height={600}
           alt="Thumbnail"
-          loading="eager"
           class="w-full"
         />
       )

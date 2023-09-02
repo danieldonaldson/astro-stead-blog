@@ -2,7 +2,7 @@
 import Container from "@components/container.astro";
 import logoImage from "@assets/logo.svg";
 import darkLogo from "@assets/logo-dark.svg";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 interface Menu {
   label: string;
@@ -126,10 +126,10 @@ const mobilemenu: Menu[] = [...leftmenu, ...rightmenu];
 </Container>
 
 <script is:inline>
-  const menuButton = document.getElementById("menu");
-  menuButton.addEventListener("click", () => {
-    [...document.querySelectorAll(".navmenu-toggle")].forEach((Element) => {
-      Element.classList.toggle("hidden");
-    });
+const menuButton = document.getElementById("menu");
+menuButton.addEventListener("click", () => {
+  [...document.querySelectorAll(".navmenu-toggle")].forEach((Element) => {
+    Element.classList.toggle("hidden");
   });
+});
 </script>

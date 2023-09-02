@@ -1,6 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
-
+import { Image } from "astro:assets";
 const { author } = Astro.props;
 ---
 
@@ -15,7 +14,6 @@ const { author } = Astro.props;
             alt="Author Photo"
             width={96}
             height={96}
-            loading="eager"
             class="rounded-full"
           />
         )
